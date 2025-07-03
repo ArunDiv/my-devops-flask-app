@@ -7,7 +7,11 @@ set -e
 
 # --- Configuration ---
 # Your Docker Hub Username
+<<<<<<< HEAD
 DOCKER_HUB_USERNAME="arundiv" # REPLACE with your Docker Hub username
+=======
+DOCKER_HUB_USERNAME="your-dockerhub-username" # REPLACE with your Docker Hub username
+>>>>>>> a17f4673fcf706e628ec43cb583742f76dade19c
 
 # Application Name (used for image name)
 APP_NAME="devops-build-app"

@@ -7,16 +7,27 @@ set -e
 
 # --- Configuration ---
 # Your Docker Hub Username
+<<<<<<< HEAD
 DOCKER_HUB_USERNAME="arundiv" # REPLACE with your Docker Hub username
+=======
+DOCKER_HUB_USERNAME="your-dockerhub-username" # REPLACE with your Docker Hub username
+>>>>>>> a17f4673fcf706e628ec43cb583742f76dade19c
 
 # Application Name (used for image name)
 APP_NAME="devops-build-app"
 
 # EC2 Application Server Public IP
+<<<<<<< HEAD
 APP_SERVER_PUBLIC_IP="3.110.47.64" # REPLACE with your EC2 app server's Public IP
 
 # Path to your SSH private key on the machine running this script (e.g., Jenkins server or local)
 SSH_KEY_PATH="my-devops-server.pem" # REPLACE with the path to your .pem file
+=======
+APP_SERVER_PUBLIC_IP="<Your_App_Server_Public_IP>" # REPLACE with your EC2 app server's Public IP
+
+# Path to your SSH private key on the machine running this script (e.g., Jenkins server or local)
+SSH_KEY_PATH="my-devops-server-key.pem" # REPLACE with the path to your .pem file
+>>>>>>> a17f4673fcf706e628ec43cb583742f76dade19c
 
 # Determine the image tag based on the branch (this script will be run after build.sh context)
 # In a Jenkins pipeline, the image name would be passed as a parameter.
