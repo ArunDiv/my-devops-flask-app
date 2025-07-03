@@ -1,0 +1,16 @@
+# .gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+.mypy_cache/
+.pytest_cache/
+.venv/
+*.log
+*.tmp
+*.bak
+# Ignore compiled Docker context files, not Dockerfile or compose
+.dockerignore
+node_modules/
