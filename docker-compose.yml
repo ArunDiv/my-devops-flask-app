@@ -1,10 +1,8 @@
-# docker-compose.yml
 version: '3.8'
-
 services:
   web:
-    build: .
-    container_name: devops-flask-app
+    image: ${APP_IMAGE_FULL_NAME} # This will be set by our deploy.sh script
     ports:
-      - "80:8000" # Maps host port 80 to container port 8000 (where Flask app runs)
-    restart: always # Ensure the container restarts if it crashes
+      - "80:8000"
+    environment:
+      - NAME=ArunDiv # Keep this or adjust as needed for your app.py
